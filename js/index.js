@@ -71,10 +71,10 @@
     return new THREE.Mesh(
       new THREE.SphereGeometry(radius, segments, segments),
       new THREE.MeshPhongMaterial({
-        map: new THREE.TextureLoader().load("/img/earthmap1k.jpg"),
-        bumpMap: new THREE.TextureLoader().load("/img/earthbump1k.jpg"),
+        map: new THREE.TextureLoader().load("img/earthmap1k.jpg"),
+        bumpMap: new THREE.TextureLoader().load("img/earthbump1k.jpg"),
         bumpScale: 0.008,
-        specularMap: new THREE.TextureLoader().load("/img/earthspec1k.png"),
+        specularMap: new THREE.TextureLoader().load("img/earthspec1k.png"),
         specular: new THREE.Color('grey'),
         needsUpdate: true
       })
@@ -85,7 +85,7 @@
     return new THREE.Mesh(
       new THREE.SphereGeometry(radius + 0.009, segments, segments),
       new THREE.MeshPhongMaterial({
-        map: new THREE.TextureLoader().load("/img/earthcloudmaptrans.jpg"),
+        map: new THREE.TextureLoader().load("img/earthcloudmaptrans.jpg"),
         transparent: true,
         opacity: 0.5,
         needsUpdate: true
@@ -107,8 +107,8 @@
     return new THREE.Mesh(
       new THREE.SphereGeometry(radius, segmentA, segmentB),
       new THREE.MeshPhongMaterial({
-        map: new THREE.TextureLoader().load("/img/moonmap1k.jpg"),
-        bumpMap: new THREE.TextureLoader().load("/img/moonbump1k.jpg"),
+        map: new THREE.TextureLoader().load("img/moonmap1k.jpg"),
+        bumpMap: new THREE.TextureLoader().load("img/moonbump1k.jpg"),
         bumpScale: 0.005,
         needsUpdate: true
       })
